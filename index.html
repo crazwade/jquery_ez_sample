@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/all.css">
-    <script src="js/all.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').click(function () {
+                $('.menu_li').slideToggle();
+            })
+        });
+    </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jquery特效</title>
+    <style>
+        h1{
+            cursor: pointer;
+        }
+        .h1{
+            border:2px solid black;
+            width:200px;
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
     <h1 class="h1">點我顯示效果</h1>
     <ul class="menu_li">
-    <li>*</li>
-    <li>***</li>
-    <li>*****</li>
-    <li>*******</li>
-    <li>*********</li>
-    <li>***********</li>
-    <li>*************</li>
-    <li>***************</li>
-    <li>*****************</li>
+        <li>*</li>
+        <li>***</li>
+        <li>*****</li>
+        <li>*******</li>
+        <li>*********</li>
+        <li>***********</li>
+        <li>*************</li>
+        <li>***************</li>
+        <li>*****************</li>
     </ul>
 </body>
 </html>
